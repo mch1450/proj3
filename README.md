@@ -1,13 +1,15 @@
-#Project 3 Description:
+**Project 3 Description:**
 In this project, you will be making a header-only library that defines a class that can hold recipes and a class that represents a (extremely) simple recipe app.
 Descriptions of the only three files that should be submitted:
-  - **recipe.h: Contain the declaration and definition of a class named Recipe. Can also contain other functions / classes if you find them useful. 
-  - **app.h: Contain the declaration and definition of a class named RecipeApp. Can also contain other functions / classes if you find them useful. 
-  - **utility.h: This file is never directly included by the unit tests, but you can put code needed to be included by the other files in this file if you would like.
+  - **recipe.h:** Contain the declaration and definition of a class named Recipe. Can also contain other functions / classes if you find them useful. 
+  - **app.h:** Contain the declaration and definition of a class named RecipeApp. Can also contain other functions / classes if you find them useful. 
+  - **utility.h:** This file is never directly included by the unit tests, but you can put code needed to be included by the other files in this file if you would like.
 
 Only the public member functions of Recipe and RecipeApp you are allowed to have are described here. Your solutions will likely have private attributes, as well as, additional functions and classes to support the described classes.
 
+______________________________________________________________________________________________________________________________________________________
 The test cases make use of raw string literals. The R”(…)” is how to make a raw  string literal. This is useful for using multiline strings in code. See: https://stackoverflow.com/questions/1135841/c-multiline-string-literal 
+______________________________________________________________________________________________________________________________________________________
 
 **class Recipe**
 This class should have a constructor that takes a string (representing the name of a recipe) and a integer representing the number of servings this recipe will serve. In this project, all number of servings will be positive integers. Example: Recipe r("Microwave Popcorn", 3);
@@ -74,7 +76,7 @@ From: https://www.allrecipes.com/recipe/87305/microwave-popcorn/
   r.ChangeServings(6);
 
   std::cout << r << std::endl;
-
+______________________________________________________________________________________________________________________________________________________
 **class RecipeApp:**
 
 This class represents a simple recipe manager that can save recipes and items in a pantry. And can also scale recipes to consume nearly all of a particular ingredient a customer have have.
@@ -113,7 +115,7 @@ Here is an example of using the RecipeApp class:
   std::cout << r;
 
   std::cout << ra;
-
+______________________________________________________________________________________________________________________________________________________
 Manually Graded Components:
 
 25 points on this project are set aside for manual grading.
